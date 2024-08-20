@@ -1,4 +1,668 @@
+@font-face {
+    font-family: "Oliciy";
+    src: url("../fonts/oliciy.ttf") format("truetype");
+  }
+    $color-1: #342031;
+    $color-2: #9D2053;
+    $color-3: #F9EAE1;
+
+    $color-2-1: #74183d;
+
 body{
-    background-color: bisque;
-    color: brown;
+    background-color: $color-1 !important;
+}
+.navbar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: $color-3;
+}
+.logo {
+    img{
+        max-width: 120px !important;
+        height: auto;
+    }
+}
+h1{
+    font-family: "Oliciy";
+    font-size: 36px;
+    margin-bottom: 0%;
+}
+h2{
+    font-family: "Oliciy";
+    font-size: 28px;
+    margin-bottom: 0%;
+}
+p{
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    margin-bottom: 0%;
+}
+.bold{
+    font-weight: 700;
+}
+
+.darktext{
+    color: $color-1;
+}
+.magentatext{
+    color: $color-2;
+}
+.lighttext{
+    color: $color-3 ;
+}
+
+.border-3{
+    border: $color-3 3px solid;
+}
+.border-5{
+    border: $color-3 5px solid;
+}
+.border-b-3{
+    border-bottom: $color-3 3px solid;
+}
+.border-r-0{
+    border-radius: 0px;
+}
+.border-r-5{
+    border-radius: 5px;
+}
+.border-r-10{
+    border-radius: 10px;
+}
+
+.p-text-razonable-1{
+    padding: 10px 20px !important;
+}
+.py-25{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.py-50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.py-100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.py-200{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.px-5p{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.px-20p{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+.pb-25{
+    padding-bottom: 25px;
+}
+.pb-50{
+    padding-bottom: 50px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+.pb-200{
+    padding-bottom: 200px;
+}
+.ml-5p{
+    margin-left: 5%;
+}
+
+.bg-1{
+    background-color: $color-1;
+}
+.bg-2{
+    background-color: $color-2;
+}
+.bg-3{
+    background-color: $color-3;
+}
+
+.nav-link{
+    position: relative;
+    color: $color-3 !important;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    margin-bottom: 0%;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: $color-2;
+    //border: 0px solid $color-3;
+    border-radius: 10px;
+    transition: height 0.3s ease-in-out;
+    z-index: -10; /* Asegura que el pseudo-elemento esté detrás del texto */
+}
+
+.nav-link:hover::before {
+    height: 100%;
+    // border: 3px solid $color-3;
+}
+.navbar-toggler {
+    border-color: $color-3; /* Ocultar el borde del botón */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="%23F9EAE1" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+.menu-r-items{
+    text-align: end;
+}
+
+.banner-inicio {
+    position: relative;
+    width: 100%;
+    height: auto; /* Ajusta según tus necesidades */
+    overflow: hidden;
+}
+
+.b-inicio-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 200%;
+    min-height: 100%;
+    z-index: -10;
+    background-size: cover; /* Asegura que la imagen no se estire */
+    background-repeat: repeat-x;
+    animation: moveBackground 30s linear infinite; /* Ajusta la duración según lo necesario */
+}
+
+@keyframes moveBackground {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.astronauta1 {
+    margin-top: -300px;
+    width: 33%;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Ajusta el valor según la intensidad del movimiento que desees */
+    }
+}
+.card-soy{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.card-soy-img-fondo{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -10;
+    left:0%;
+    top: 0%;
+}
+.card-soy-img-astro{
+    width: 95%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.card-soy-interior{
+    margin: 30px !important;
+    margin-left: 40px !important;
+    background-color: $color-3;
+    color: $color-1
+}
+.card-soy-interior-izq{
+    background-color: $color-1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 0px ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+}
+.card-soy-interior-der{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    text-align: start;
+    p{
+        margin-bottom: 0px;
+    }
+    h1{
+        margin-bottom: 0px;
+    }
+}
+.boton-card-1 {
+    position: absolute;
+    padding: 20px 30px;
+    right: 0%;
+    bottom: 0%;
+    z-index: 10;
+    text-decoration: none;
+    background-color: $color-2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden; /* Para asegurar que el pseudo-elemento no salga del borde */
+    h2 {
+        font-family: "Nunito", sans-serif;
+        margin-bottom: 0px;
+        text-decoration: none;
+        color: $color-3;
+        position: relative; /* Para asegurarse de que esté por encima del pseudo-elemento */
+        z-index: 2; /* Asegura que el texto esté por encima del pseudo-elemento */
+    }
+}
+
+.boton-card-1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: $color-2-1;
+    transition: height 0.3s ease-in-out;
+    z-index: 1; /* Asegura que el pseudo-elemento esté detrás del texto */
+}
+
+.boton-card-1:hover::before {
+    height: 100%;
+}
+
+.area-d{
+    width: 100%;
+
+}
+.area-d-titulo{
+    width: 100%;
+    background-color: $color-2;
+}
+.area-d-body{
+    width: 100%;
+    position: relative;
+    overflow: hidden !important;
+}
+.area-d-patron{
+    position: absolute;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden !important;
+    left: 0%;
+    top: 0%;
+    z-index: -10;
+    opacity: 60%;
+}
+.area-d-card {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.area-d-card:hover {
+    transform: scale(1.05);
+}
+.container-fluid {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+  
+      .proyecto-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+  
+        .border-3 {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  
+    .proyecto-card-texto {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: start;
+      border-top: 3px solid $color-3;
+  
+      p {
+        padding-top: 5px;
+        padding-bottom: 10px;
+        margin-top: -10px;
+        color: $color-3;
+      }
+  
+      h2 {
+        color: $color-3;
+      }
+    }
+  }
+
+
+.proyecto-card-hover {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    left: 0%;
+    top: 0%;
+    z-index: 10;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative; /* Añadir posición relativa para el pseudo-elemento */
+    overflow: hidden; /* Para asegurarse de que el pseudo-elemento no se desborde */
+}
+
+.proyecto-card-hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: $color-2;
+    transition: height 0.3s ease-in-out; /* Transición para el relleno de abajo hacia arriba */
+    z-index: -1; /* Asegurarse de que el pseudo-elemento esté detrás del contenido */
+    border-radius: 10px; /* Mantener el borde redondeado */
+}
+
+.proyecto-card-hover:hover::before {
+    height: 100%; /* Expandir para cubrir todo el div */
+}
+
+.proyecto-card-hover:hover {
+    opacity: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.proyecto-card-hover h2 {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.proyecto-card-hover:hover h2 {
+    opacity: 1;
+}
+
+.-mx-1{
+    margin:  0px -1rem;
+}
+.modula-hidder{
+    a{
+        display: none !important;
+    }
+}
+
+
+.rrss-link{
+    position: relative !important;
+    
+}
+.rrss-hover{
+    opacity: 0%;
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    padding: 0px 12px;
+    left: 0%;
+    top: 0%;
+    transition: opacity 0.3s ease-in-out;
+}
+.rrss-hover:hover{
+    opacity: 100%;
+    
+}
+.sm-textbox{
+    p{
+        display: block;
+        height: auto;
+        padding: 10px 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+}
+.modal-content{
+    background-color: $color-1;
+    border: 5px solid $color-3;
+    border-radius: 10px;
+    color: $color-3;
+   
+}
+.modal-header{
+    padding: 25px 5% !important;
+    border-bottom: 0px !important;
+    background-color: $color-2;
+}
+.modal-dialog{
+    width: 75% !important;
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 75% !important;
+        margin: 1.75rem auto;
+    }
+}
+
+.modal-body{
+    padding: 0% 5%;
+}
+.btn-close {
+    filter: invert(1.5); /* Cambia el color a blanco */
+}
+.btn-close:hover {
+    filter: invert(2); /* Cambia el color a gris claro al pasar el mouse */
+}
+.boton-dominio {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    text-align: center;
+    border: 3px solid $color-3; /* $color-3 */
+    border-radius: 10px;
+    background-color: $color-1; /* $color-1 */
+    overflow: hidden;
+    transition: color 0.4s;
+    h2 {
+        position: relative;
+        color: $color-3; /* $color-3 */
+        z-index: 1;
+        transition: color 0.4s;
+        }
+  }
+
+
+.boton-dominio::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-2;
+    transition: top 0.4s;
+    z-index: 0;
+}
+
+.boton-dominio:hover::before {
+    top: 0;
+ }
+
+.ins-card{
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+.ins-card-arriba{
+    width:100%
+}
+.ins-card-abajo{
+    position: relative;
+    overflow: hidden;
+    height: 100% !important;
+    img{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0%;
+        top: 0%;
+        z-index: -10;
+    }
+    .ins-card-abajo-interior{
+        background: $color-3;
+        margin: 25px;
+        padding: 20px;
+        height: 175px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
+
+.categoria-pagina-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    img{
+        padding-left: 50px;
+        width: 200px !important; 
+    }
+}
+.cp-filtro-boton-inactivo {
+    padding: 10px 20px;
+    width: auto;
+    background-color: $color-2;
+    margin: 10px 20px;
+    position: relative; /* Asegura que el pseudo-elemento se posicione correctamente */
+    overflow: hidden; /* Evita que el pseudo-elemento se desborde */
+    z-index: 0; /* Asegura que el contenido del botón esté encima del pseudo-elemento */
+}
+.cp-filtro-boton {
+    padding: 10px 20px;
+    width: auto;
+    background-color: $color-2;
+    margin: 10px 20px;
+    position: relative; /* Asegura que el pseudo-elemento se posicione correctamente */
+    overflow: hidden; /* Evita que el pseudo-elemento se desborde */
+    z-index: 0; /* Asegura que el contenido del botón esté encima del pseudo-elemento */
+}
+
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.paginacion .page-numbers {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: 2px solid $color-3;
+    border-radius: 5px;
+    color: $color-3;
+    text-decoration: none;
+    position: relative; /* Añadido para posicionamiento del pseudo-elemento */
+}
+
+.paginacion .page-numbers::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: $color-2; /* Color de relleno al hacer hover */
+    transition: height 0.3s ease-in-out; /* Transición de altura */
+    z-index: -1; /* Detrás del texto */
+}
+
+.paginacion .page-numbers:hover::before {
+    height: 100%;
+}
+
+.paginacion .page-numbers:hover {
+    color: $color-3;
+}
+
+.paginacion .page-numbers.current {
+    background-color: $color-2;
+    color:$color-3;
+    border-color: $color-3;
+}
+.proyecto-single-herramienta{
+    width: 80px;
+
+}
+.proyecto-single-titulo-banner{
+    p{
+        color: $color-2 !important;
+        font-weight: 700;
+    }
+}
+.proyecto-single-img{
+    width: 100%;
+    border-radius: 10px;
+}
+.proyecto-boton-link{
+    img{
+        transition: transform 0.3s ease-in-out;
+    }
+    
+}
+.proyecto-boton-link:hover {
+    img{
+        transform: scale(1.05);
+    }
+
+        
 }
