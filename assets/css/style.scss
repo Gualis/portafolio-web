@@ -34,7 +34,8 @@ h2{
 }
 p{
     font-family: "Nunito", sans-serif;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 600;
     margin-bottom: 0%;
 }
 .bold{
@@ -199,8 +200,8 @@ p{
 }
 
 .astronauta1 {
-    margin-top: -300px;
-    width: 33%;
+    margin-top: -300px !important;
+    width: 33% !important;
     animation: float 5s ease-in-out infinite;
 }
 
