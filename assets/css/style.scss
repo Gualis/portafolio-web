@@ -327,7 +327,7 @@ p{
     z-index: -10;
     opacity: 60%;
 }
-.area-d-card {
+.area-d-card{
     width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out;
@@ -437,6 +437,41 @@ p{
     }
 }
 
+.ilustraciones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover; // Para mantener la proporción sin deformarse
+      overflow: hidden;
+    }
+  
+    .ilustraciones-width {
+      max-height: 100%;  // Mantiene proporción
+      width: 100%;
+    }
+  
+    .ilustraciones-height {
+      height: 100%; // Altura fija que sirve como referencia
+      object-fit: cover; 
+      overflow: hidden;
+    }
+  }
+  
+  // Ajustamos el contenedor a la altura de la imagen de referencia
+  .ilustraciones-especial{
+    display: flex;
+    align-items: stretch;
+    height: 50%; 
+    .ilustraciones-width {
+      height: auto;
+      max-height: 50%;  // Mantiene proporción en relación a la altura base
+    }
+  }
 
 .rrss-link{
     position: relative !important;

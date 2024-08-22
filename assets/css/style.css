@@ -459,6 +459,40 @@ p {
   display: none !important;
 }
 
+.ilustraciones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.ilustraciones img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.ilustraciones .ilustraciones-width {
+  max-height: 100%;
+  width: 100%;
+}
+.ilustraciones .ilustraciones-height {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.ilustraciones-especial {
+  display: flex;
+  align-items: stretch;
+  height: 50%;
+}
+.ilustraciones-especial .ilustraciones-width {
+  height: auto;
+  max-height: 50%;
+}
+
 .rrss-link {
   position: relative !important;
 }
