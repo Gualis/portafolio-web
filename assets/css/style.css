@@ -459,28 +459,9 @@ p {
   display: none !important;
 }
 
-.ilustraciones {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
 .ilustraciones img {
-  display: block;
   width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
-}
-.ilustraciones .ilustraciones-width {
-  max-height: 100%;
-  width: 100%;
-}
-.ilustraciones .ilustraciones-height {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
 }
 
 .ilustraciones-especial {
@@ -491,6 +472,38 @@ p {
 .ilustraciones-especial .ilustraciones-width {
   height: auto;
   max-height: 50%;
+}
+
+.ver-mas-section {
+  text-align: center;
+  padding: 20px;
+}
+.ver-mas-section .ver-mas-btn {
+  padding: 10px 20px;
+  background-color: #9D2053;
+  color: #F9EAE1;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.ver-mas-section .ver-mas-btn:hover {
+  background-color: #74183d;
+}
+.ver-mas-section .imagen-container {
+  overflow: hidden; /* Para ocultar el contenido cuando la altura sea 0 */
+}
+.ver-mas-section .imagen {
+  opacity: 0;
+  height: 0;
+  transition: height 0.5s ease, opacity 0.5s ease;
+}
+
+.imagen-container img {
+  height: 0; /* Valor inicial */
+  opacity: 0; /* Valor inicial */
+  transition: height 0.5s ease, opacity 0.5s ease; /* Transición de 0.5s */
+  overflow: hidden; /* Evita que el contenido sobresalga */
 }
 
 .rrss-link {
