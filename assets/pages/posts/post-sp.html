@@ -39,76 +39,220 @@
         </div>
     </nav>
 
-    <main>
+    <main class="single">
         <section> <!-- "Banner" principal -->
-            <div class="container-fluid py-50 px-5p border-b-3">
-                <div class="row pb-25">
+            <div class="container-fluid py-50 border-b-3">
+                <div class="row pb-25 px-5p">
                     <div class="col-md-6 align-self-center">
                         <div class="row proyecto-single-titulo-banner">
                             <div class="col-md-2">
-                                <img id="category-img" class="img-fluid" src="" alt="Imagen de Categoría"/>
+                                <!-- Espacio para la imagen de categoría -->
+                                <img src="../../imgs/iconos/icono-web.webp" class="img-fluid" alt="Imagen de categoría"/>
                             </div>
                             <div class="col-md-10">
-                                <p id="post-content"></p>
-                                <h1 id="post-title" class="lighttext"></h1>
+                                <!-- Espacio para el contenido y el título del proyecto -->
+                                <p>Práctica profesional</p>
+                                <h1 class="lighttext">Smart Partners</h1>
                             </div>
                         </div>
-                        <div class="row py-25" id="tools-container">
-                            <!-- Las herramientas se agregarán aquí -->
+                        <div class="row py-25">
+                            <!-- Espacios para las herramientas del proyecto -->
+                            <div class="col-md-2">
+                                <img src="../../imgs/softwares/webflow.webp" class="proyecto-single-herramienta" alt="Herramienta 1"/>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="../../imgs/softwares/css.webp" class="proyecto-single-herramienta" alt="Herramienta 2"/>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="../../imgs/softwares/figma.webp" class="proyecto-single-herramienta" alt="Herramienta 3"/>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img id="main-img" class="proyecto-single-img" src="" alt="Imagen Principal"/>
+                        <!-- Espacio para la imagen principal del proyecto -->
+                        <img src="../../imgs/proyectos/sp/sp-principal.webp" class="proyecto-single-img" alt="Imagen principal"/>
                     </div>
                 </div>
-                <div class="row justify-content-center" id="category-container">
-                    <!-- Las categorías se agregarán aquí -->
+                <div class="col-md-12 pt-3 d-flex flex-row justify-content-center">
+                    <!-- Subcategorías estáticas -->
+                    <div class="border-r-10 border-3 cp-filtro-boton">
+                        <p class="bold lighttext">Research UX</p>
+                    </div>
+                    <div class="border-r-10 border-3 cp-filtro-boton">
+                        <p class="bold lighttext">Arquitectura de la Info.</p>
+                    </div>
+                    <div class="border-r-10 border-3 cp-filtro-boton">
+                        <p class="bold lighttext">Diseño de Interfaz</p>
+                    </div>
+                    <div class="border-r-10 border-3 cp-filtro-boton">
+                        <p class="bold lighttext">Desarrollo y Testeo</p>
+                    </div>
+                    <!-- Agrega más subcategorías según sea necesario -->
                 </div>
             </div>
         </section>
 
         <section> <!-- Resumen -->
-            <div class="container-fluid px-5p py-50">
-                <div class="row pb-5 pt-3">
+            <div class="container-fluid py-50 ">
+                <div class="row pb-5  px-5p  pt-5">
                     <div class="col-md-8 lighttext">
-                        <h2 id="summary-title" class="pb-25"></h2>
-                        <p id="summary-paragraph"></p>
+                        <h2 class="pb-25">Resumen del proyecto</h2>
+                        <p>Durante mi práctica profesional en Smart Partners, empresa de tecnología de seguridad, me encargué de rediseñar su sitio web desde cero. Busqué crear una plataforma que reflejara la experiencia e innovación de la empresa, optimizando la experiencia de usuario y su presencia en línea. Mediante un enfoque integral que incluyó investigación, planificación, diseño y desarrollo, entregué un sitio web funcional, atractivo y alineado con sus objetivos estratégicos.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section> <!-- Info 1 -->
-            <div class="container-fluid px-5p pb-50">
-                <div class="row">
+        <section> <!-- Research UX -->
+            <div class="container-fluid pb-50">
+                <div class="row px-5p ">
                     <div class="col-md-12">
-                        <h2 id="info1-title" class="pb-25 lighttext"></h2>
+                        <h2 class="pb-25 lighttext">Research UX</h2>
                     </div>
                     <div class="col-md-6 lighttext">
-                        <p id="info1-paragraph"></p>
+                        <p>Comencé comprendiendo a fondo el entorno y relaciones clave de Smart Partners, definiendo propuestas de valor y principales actores involucrados. Al crear perfiles de usuarios y mapear sus trayectos, identifiqué puntos críticos y áreas de mejora. Mediante un benchmark con sitios del sector, obtuve perspectivas para que nuestro diseño igualara o superara a la competencia. Además, investigué palabras clave esenciales para mejorar la visibilidad en motores de búsqueda, asegurando un sólido enfoque SEO.</p>
                     </div>
-                    <div class="col-md-1"></div>
+                    <div class="col-md-2"></div>
                     <div class="col-md-4 border-3 border-r-10 bg-2 p-5">
-                        <p class="lighttext bold pb-10" style="font-size: 24px;">
-                            Tareas Realizadas:
-                        </p>
-                        <p id="info1-list" class="lighttext bold"></p>
+                        <p class="lighttext bold pb-10" style="font-size: 24px; font-weight: 700 !important;">Tareas Realizadas:</p>
+                        <p class="lighttext bold">
+                            <br>Mapa de Contexto
+                            <br>VP Canvas
+                            <br>Mapa de actores (Stakeholders)
+                            <br>Arquetipos de Usuarios
+                            <br>Customer Journey Map
+                            <br>Análisis de Referentes (Benchmark)
+                            <br>Análisis de palabras clave (SEO)</p>
                     </div>
                 </div>
-                <div class="row py-50 justify-content-center" id="info1-images">
-                    <!-- Las imágenes de info1 se agregarán aquí -->
+                <div class="row py-50 justify-content-center">
+                    <!-- Espacios para las imágenes de la información 1 -->
+                    <div class="col-md-3">
+                        <img src="path/to/info-1-img-1.jpg" class="proyecto-single-img" alt="Info 1 Imagen 1"/>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="path/to/info-1-img-2.jpg" class="proyecto-single-img" alt="Info 1 Imagen 2"/>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="path/to/info-1-img-3.jpg" class="proyecto-single-img" alt="Info 1 Imagen 3"/>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Agregar secciones info2, info3, etc. según sea necesario -->
+        <!-- Repetir secciones Info 2, Info 3, y Info 4 según sea necesario -->
 
-        <section> <!-- Link -->
+        <section> <!-- Arq de la Info -->
+            <div class="container-fluid pb-50">
+                <div class="row px-5p ">
+                    <div class="col-md-12">
+                        <h2 class="pb-25 lighttext">Arquitectura de la información</h2>
+                    </div>
+                    <div class="col-md-6 lighttext">
+                        <p>Para estructurar el contenido de forma intuitiva, inicié con una planificación creativa exhaustiva. Revisé y organicé el contenido existente, asegurando que toda la información relevante estuviera presente y bien distribuida. Aplicando técnicas de agrupación de información basadas en la organización natural de los usuarios, desarrollé un mapa de navegación claro y eficiente que mejoró la accesibilidad y facilitó a los usuarios encontrar rápidamente la información, alineando el sitio con los objetivos de usabilidad de Smart Partners.</p>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4 border-3 border-r-10 bg-2 p-5">
+                        <p class="lighttext bold pb-10" style="font-size: 24px; font-weight: 700 !important;">Tareas Realizadas:</p>
+                        <p class="lighttext bold">
+                            <br>Matriz creativa
+                            <br>Inventario de Contenido
+                            <br>Cardsorting
+                            <br>Mapa de Contexto
+                            <br>Mapa de actores (Stakeholders)
+                        </p>
+                    </div>
+                </div>
+                <div class="row py-50 justify-content-center">
+                    <!-- Espacios para las imágenes de la información 1 -->
+                    <div class="col-md-3">
+                        <img src="path/to/info-1-img-1.jpg" class="proyecto-single-img" alt="Info 1 Imagen 1"/>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="path/to/info-1-img-2.jpg" class="proyecto-single-img" alt="Info 1 Imagen 2"/>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="path/to/info-1-img-3.jpg" class="proyecto-single-img" alt="Info 1 Imagen 3"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section> <!-- Diseño de Interfaz -->
+            <div class="container-fluid pb-50">
+                <div class="row px-5p ">
+                    <div class="col-md-12">
+                        <h2 class="pb-25 lighttext">Diseño de interfaz</h2>
+                    </div>
+                    <div class="col-md-6 lighttext">
+                        <p>En la etapa de diseño, creé una interfaz visualmente atractiva y coherente, planificando la estructura de cada página para asegurar una navegación fluida. Definí lineamientos visuales y tipográficos que mantuvieran la consistencia y representaran adecuadamente la identidad de la marca. Los diseños preliminares permitieron ajustar aspecto y funcionalidad antes de la implementación, facilitando la validación y aprobación de los supervisores.</p>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4 border-3 border-r-10 bg-2 p-5">
+                        <p class="lighttext bold pb-10" style="font-size: 24px; font-weight: 700 !important;">Tareas Realizadas:</p>
+                        <p class="lighttext bold">
+                            <br>Wireframes
+                            <br>Guía de stilo
+                            <br>Mockups
+                        </p>
+                    </div>
+                </div>
+                <div class="row py-50 justify-content-center">
+                    <!-- Espacios para las imágenes de la información 1 -->
+                    <div class="col-md-3">
+                        <img src="path/to/info-1-img-1.jpg" class="proyecto-single-img" alt="Info 1 Imagen 1"/>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="path/to/info-1-img-2.jpg" class="proyecto-single-img" alt="Info 1 Imagen 2"/>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="path/to/info-1-img-3.jpg" class="proyecto-single-img" alt="Info 1 Imagen 3"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section> <!-- Desarrollo y Testeo -->
+            <div class="container-fluid pb-50">
+                <div class="row px-5p ">
+                    <div class="col-md-12">
+                        <h2 class="pb-25 lighttext">Desarrollo y Testeo</h2>
+                    </div>
+                    <div class="col-md-6 lighttext">
+                        <p>El desarrollo del sitio se llevó a cabo de forma ágil y eficiente, integrando correctamente todas las funcionalidades planificadas. Realicé pruebas exhaustivas para asegurar el correcto funcionamiento en diversos dispositivos y navegadores. Los ajustes finales mejoraron la accesibilidad y experiencia de usuario, resultando en un sitio web fácil de mantener y actualizar, que refleja la profesionalidad e innovación de Smart Partners.</p>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4 border-3 border-r-10 bg-2 p-5">
+                        <p class="lighttext bold pb-10" style="font-size: 24px; font-weight: 700 !important;">Tareas Realizadas:</p>
+                        <p class="lighttext bold">
+                            <br>Desarrollo Web en webflow
+                        </p>
+                    </div>
+                </div>
+                <div class="row py-50 justify-content-center">
+                    <!-- Espacios para las imágenes de la información 1 -->
+                    <div class="col-md-3">
+                        <img src="path/to/info-1-img-1.jpg" class="proyecto-single-img" alt="Info 1 Imagen 1"/>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="path/to/info-1-img-2.jpg" class="proyecto-single-img" alt="Info 1 Imagen 2"/>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="path/to/info-1-img-3.jpg" class="proyecto-single-img" alt="Info 1 Imagen 3"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Cada una sigue el mismo formato, con imágenes y texto reemplazados -->
+
+        <section> <!-- link -->
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4 mx-auto">
-                        <a id="post-link" href="" target="_blank" class="proyecto-boton-link">
-                            <img id="link-img" class="img-fluid" src="" alt="Imagen del Link"/>
+                        <a href="https://smartpartnerss-sublime-site.webflow.io" target="_blank" class="proyecto-boton-link">
+                            <!-- Espacio para la imagen del link -->
+                            <img src="../../imgs/generales/link-sitio.png" class="img-fluid" alt="Imagen del Link"/>
                         </a>
                     </div>
                 </div>
@@ -163,73 +307,7 @@
         </div>
     </footer>
 
-    <script>
-        async function loadPostDetails() {
-            try {
-                // Cambia 'post-details.json' por la ruta a tu archivo JSON
-                const response = await fetch('../../json/smart-partners.json');
-                const post = await response.json();
-
-                // Asignar datos a los elementos
-                document.getElementById('post-title').textContent = post.title;
-                document.getElementById('post-content').textContent = post.content;
-                document.getElementById('category-img').src = post.categoryImage;
-                document.getElementById('main-img').src = post.mainImage;
-
-                // Agregar herramientas
-                const toolsContainer = document.getElementById('tools-container');
-                post.tools.forEach(tool => {
-                    const toolImg = document.createElement('img');
-                    toolImg.src = tool;
-                    toolImg.className = 'proyecto-single-herramienta';
-                    toolsContainer.appendChild(toolImg);
-                });
-
-                // Agregar categorías
-                const categoryContainer = document.getElementById('category-container');
-                // Supongamos que quieres mostrar algo estático para las categorías
-                post.categories.forEach(category => {
-                    const categoryDiv = document.createElement('div');
-                    categoryDiv.className = 'border-r-10 border-3 cp-filtro-boton-inactivo';
-                    categoryDiv.textContent = category; // Ajusta según tus necesidades
-                    categoryContainer.appendChild(categoryDiv);
-                });
-
-                // Agregar resumen
-                document.getElementById('summary-title').textContent = post.summary.title;
-                document.getElementById('summary-paragraph').textContent = post.summary.paragraph;
-
-                // Agregar secciones de información
-                post.infoSections.forEach((section, index) => {
-                    const sectionTitle = document.getElementById(`info${index+1}-title`);
-                    const sectionParagraph = document.getElementById(`info${index+1}-paragraph`);
-                    const sectionList = document.getElementById(`info${index+1}-list`);
-                    const sectionImages = document.getElementById(`info${index+1}-images`);
-
-                    if (sectionTitle) sectionTitle.textContent = section.title;
-                    if (sectionParagraph) sectionParagraph.textContent = section.paragraph;
-                    if (sectionList) sectionList.textContent = section.list;
-
-                    section.images.forEach(image => {
-                        const img = document.createElement('img');
-                        img.src = image;
-                        img.className = 'proyecto-single-img';
-                        sectionImages.appendChild(img);
-                    });
-                });
-
-                // Agregar enlace
-                document.getElementById('post-link').href = post.link;
-                document.getElementById('link-img').src = post.linkImage;
-
-            } catch (error) {
-                console.error('Error cargando los detalles del post:', error);
-            }
-        }
-
-        // Cargar los detalles del post cuando la página esté lista
-        document.addEventListener('DOMContentLoaded', loadPostDetails);
-    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 </body>
