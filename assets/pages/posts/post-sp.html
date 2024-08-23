@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Partners - Eduardo Fuentes | Portafolio Web</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+    <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+          />
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md border-b-3 px-5p py-25">
+        <div class="container-fluid text-light">
+            <a href="../../../index.html">
+                <div class="logo">
+                    <!-- Aquí se inserta el logo personalizado -->
+                    <img src="../../imgs/generales/Logo.png" alt="Logo">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <!-- Aquí se inserta el menú -->
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item"><a href="desarrollo-web.html" class="nav-link">Desarrollo Web</a></li>
+                    <li class="nav-item"><a href="sobre-mi.html" class="nav-link">Sobre mí</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section> <!-- "Banner" principal -->
+            <div class="container-fluid py-50 px-5p border-b-3">
+                <div class="row pb-25">
+                    <div class="col-md-6 align-self-center">
+                        <div class="row proyecto-single-titulo-banner">
+                            <div class="col-md-2">
+                                <img id="category-img" class="img-fluid" src="" alt="Imagen de Categoría"/>
+                            </div>
+                            <div class="col-md-10">
+                                <p id="post-content"></p>
+                                <h1 id="post-title" class="lighttext"></h1>
+                            </div>
+                        </div>
+                        <div class="row py-25" id="tools-container">
+                            <!-- Las herramientas se agregarán aquí -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img id="main-img" class="proyecto-single-img" src="" alt="Imagen Principal"/>
+                    </div>
+                </div>
+                <div class="row justify-content-center" id="category-container">
+                    <!-- Las categorías se agregarán aquí -->
+                </div>
+            </div>
+        </section>
+
+        <section> <!-- Resumen -->
+            <div class="container-fluid px-5p py-50">
+                <div class="row pb-5 pt-3">
+                    <div class="col-md-8 lighttext">
+                        <h2 id="summary-title" class="pb-25"></h2>
+                        <p id="summary-paragraph"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section> <!-- Info 1 -->
+            <div class="container-fluid px-5p pb-50">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 id="info1-title" class="pb-25 lighttext"></h2>
+                    </div>
+                    <div class="col-md-6 lighttext">
+                        <p id="info1-paragraph"></p>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4 border-3 border-r-10 bg-2 p-5">
+                        <p class="lighttext bold pb-10" style="font-size: 24px;">
+                            Tareas Realizadas:
+                        </p>
+                        <p id="info1-list" class="lighttext bold"></p>
+                    </div>
+                </div>
+                <div class="row py-50 justify-content-center" id="info1-images">
+                    <!-- Las imágenes de info1 se agregarán aquí -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Agregar secciones info2, info3, etc. según sea necesario -->
+
+        <section> <!-- Link -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 mx-auto">
+                        <a id="post-link" href="" target="_blank" class="proyecto-boton-link">
+                            <img id="link-img" class="img-fluid" src="" alt="Imagen del Link"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer> <!-- Footer -->
+        <div class="container-fluid px-5p py-100">
+          <div class="row text-center">
+            <div class="col-md-10 mx-auto">
+              <div class="card-soy border-r-10">
+                <img src="../../imgs/generales/patron1.png" class="card-soy-img-fondo border-r-10" alt="Background image placeholder" />
+      
+                <div class="card-soy-interior border-r-10 ">
+                  <div class="row">
+                    <div class="col-md-4 card-soy-interior-izq">
+                      <img src="../../imgs/generales/casco-de-astronauta.png" class="card-soy-img-astro" alt="Astro image placeholder" />
+                    </div>
+      
+                    <div class="col-md-8 card-soy-interior-der border-r-10">
+                      <h1 class="magentatext">¡Trabajemos juntos!</h1>
+                      <p class="darktext">Estoy disponible y encantado de ofrecerte mis servicios digitales. Puedes contactarme a través de la red que te sea más conveniente.</p>
+      
+                      <div class="row px-20p">
+                        <a href="https://www.behance.net/eduardofuentes28" target="_blank" class="col-md-3 rrss-link">
+                          <img src="../../imgs/rrss/behance.png" class="img-fluid" alt="Social media 1" />
+                          <img src="../../imgs/rrss/rrss-hover.png" class="img-fluid rrss-hover" alt="Hover social media 1" />
+                        </a>
+      
+                        <a href="mailto:effs76@gmail.com" target="_blank" class="col-md-3 rrss-link">
+                          <img src="../../imgs/rrss/gmail.png" class="img-fluid" alt="Social media 2" />
+                          <img src="../../imgs/rrss/rrss-hover.png" class="img-fluid rrss-hover" alt="Hover social media 2" />
+                        </a>
+      
+                        <a href="https://www.instagram.com/ungualiderincon/" target="_blank" class="col-md-3 rrss-link">
+                          <img src="../../imgs/rrss/instagram.png" class="img-fluid" alt="Social media 3" />
+                          <img src="../../imgs/rrss/rrss-hover.png" class="img-fluid rrss-hover" alt="Hover social media 3" />
+                        </a>
+      
+                        <a href="https://www.linkedin.com/in/eduardo-fuentes-352414203/" target="_blank" class="col-md-3 rrss-link">
+                          <img src="../../imgs/rrss/linkedin.png" class="img-fluid" alt="Social media 4" />
+                          <img src="../../imgs/rrss/rrss-hover.png" class="img-fluid rrss-hover" alt="Hover social media 4" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script>
+        async function loadPostDetails() {
+            try {
+                // Cambia 'post-details.json' por la ruta a tu archivo JSON
+                const response = await fetch('../../json/smart-partners.json');
+                const post = await response.json();
+
+                // Asignar datos a los elementos
+                document.getElementById('post-title').textContent = post.title;
+                document.getElementById('post-content').textContent = post.content;
+                document.getElementById('category-img').src = post.categoryImage;
+                document.getElementById('main-img').src = post.mainImage;
+
+                // Agregar herramientas
+                const toolsContainer = document.getElementById('tools-container');
+                post.tools.forEach(tool => {
+                    const toolImg = document.createElement('img');
+                    toolImg.src = tool;
+                    toolImg.className = 'proyecto-single-herramienta';
+                    toolsContainer.appendChild(toolImg);
+                });
+
+                // Agregar categorías
+                const categoryContainer = document.getElementById('category-container');
+                // Supongamos que quieres mostrar algo estático para las categorías
+                post.categories.forEach(category => {
+                    const categoryDiv = document.createElement('div');
+                    categoryDiv.className = 'border-r-10 border-3 cp-filtro-boton-inactivo';
+                    categoryDiv.textContent = category; // Ajusta según tus necesidades
+                    categoryContainer.appendChild(categoryDiv);
+                });
+
+                // Agregar resumen
+                document.getElementById('summary-title').textContent = post.summary.title;
+                document.getElementById('summary-paragraph').textContent = post.summary.paragraph;
+
+                // Agregar secciones de información
+                post.infoSections.forEach((section, index) => {
+                    const sectionTitle = document.getElementById(`info${index+1}-title`);
+                    const sectionParagraph = document.getElementById(`info${index+1}-paragraph`);
+                    const sectionList = document.getElementById(`info${index+1}-list`);
+                    const sectionImages = document.getElementById(`info${index+1}-images`);
+
+                    if (sectionTitle) sectionTitle.textContent = section.title;
+                    if (sectionParagraph) sectionParagraph.textContent = section.paragraph;
+                    if (sectionList) sectionList.textContent = section.list;
+
+                    section.images.forEach(image => {
+                        const img = document.createElement('img');
+                        img.src = image;
+                        img.className = 'proyecto-single-img';
+                        sectionImages.appendChild(img);
+                    });
+                });
+
+                // Agregar enlace
+                document.getElementById('post-link').href = post.link;
+                document.getElementById('link-img').src = post.linkImage;
+
+            } catch (error) {
+                console.error('Error cargando los detalles del post:', error);
+            }
+        }
+
+        // Cargar los detalles del post cuando la página esté lista
+        document.addEventListener('DOMContentLoaded', loadPostDetails);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>

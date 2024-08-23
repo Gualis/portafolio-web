@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí - Eduardo Fuentes | Portafolio Web</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+    <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+          />
+</head>
+<body>
+    <nav class="navbar navbar-expand-md border-b-3 px-5p py-25">
+        <div class="container-fluid text-light">
+            <a href="../../index.html">
+                <div class="logo">
+                    <!-- Aquí se inserta el logo personalizado -->
+                    <img src="../imgs/generales/Logo.png" alt="Logo">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <!-- Aquí se inserta el menú -->
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item"><a href="desarrollo-web.html" class="nav-link">Desarrollo Web</a></li>
+                    <li class="nav-item"><a href="sobre-mi.html" class="nav-link">Sobre mí</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <section> <!-- Introducción -->
+            <div class="container-fluid py-50">
+                <div class="row px-5p py-50">
+                    <div class="col-md-3">
+                        <img src="../imgs/sobre-mi/foto-de-mi.png" class="img-fluid" alt="Descripción de la imagen 1"/>
+                    </div>
+                    <div class="col-md-6 sm-textbox align-self-center">
+                        <p class="darktext bg-3">
+                            ¡Hola! Soy Eduardo, una persona apasionada por levantar proyectos. Espero disfrutes de leer mi trayecto por el mundo del diseño y desarrollo en distintas áreas de mi interés.
+                        </p>
+                        <div class="py-100"></div>
+                    </div>
+                </div>
+        
+                <div class="row px-5p pb-50">
+                    <div class="col-md-8 align-self-center">
+                        <p class="lighttext">
+                            Desde hace varios años que empecé a crear y concretar proyectos en las áreas que me gustan.
+                            <br><br>
+                            Comencé creando videojuegos en Unity en 2020 y en conjunto aprendí a ilustrar digitalmente con Photoshop e Illustrator. En 2022, comencé a estudiar la carrera técnica de Desarrollo y Diseño Web, buscando algo que combinara la programación con el diseño. En ella, empecé a trabajar como freelance ofreciendo mis servicios digitales, lo cual me llevó a trabajar en el área del Diseño Gráfico.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../imgs/sobre-mi/cover-de-juego-ficticio.png" class="img-fluid" alt="Descripción de la imagen 2"/>
+                    </div>
+                </div>
+        
+                <div class="row px-5p pb-50">
+                    <div class="col-md-8 mx-auto bg-3 border-r-10 p-text-razonable-1">
+                        <p class="darktext">
+                            Debido a esto, tengo un buen menjunje de habilidades en el área digital lo cual me permite abarcar distintos tipos de proyectos.
+                        </p>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        
+        <section> <!-- Dominio de tecnología -->
+            <div class="container-fluid">
+                <h1 class="lighttext pb-50 px-5p">Dominio de Tecnologías</h1>
+                <div class="row px-5p">
+                    <div class="col-md-3">
+                        <button type="button" class="boton-dominio" data-bs-toggle="modal" data-bs-target="#modalDW">
+                            <h2>Desarrollo Web</h2>
+                        </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="boton-dominio" data-bs-toggle="modal" data-bs-target="#modalDG">
+                            <h2>Diseño Gráfico</h2>
+                        </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="boton-dominio" data-bs-toggle="modal" data-bs-target="#modalDJ">
+                            <h2>Videojuegos</h2>
+                        </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="boton-dominio" data-bs-toggle="modal" data-bs-target="#modalI">
+                            <h2>Ilustración</h2>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modal DW -->
+            <div class="modal fade" id="modalDW" tabindex="-1" aria-labelledby="modalDWLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-1">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="modalDWLabel">Desarrollo Web</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body py-50">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dw/html.png" class="img-fluid" alt="Descripción de la imagen 4"/>
+                                    </div>
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dw/css.png" class="img-fluid" alt="Descripción de la imagen 5"/>
+                                    </div>
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dw/js.png" class="img-fluid" alt="Descripción de la imagen 6"/>
+                                    </div>
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dw/wordpress.png" class="img-fluid" alt="Descripción de la imagen 1"/>
+                                    </div>
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dw/webflow.png" class="img-fluid" alt="Descripción de la imagen 2"/>
+                                    </div>
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dw/shopify.png" class="img-fluid" alt="Descripción de la imagen 3"/>
+                                    </div>
+                                    
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dw/github.png" class="img-fluid" alt="Descripción de la imagen 7"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modal DG -->
+            <div class="modal fade" id="modalDG" tabindex="-1" aria-labelledby="modalDGLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="modalDGLabel">Diseño Gráfico</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body py-50">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dg/figma.png" class="img-fluid" alt="Descripción de la imagen 1"/>
+                                    </div>
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dg/illustrator.png" class="img-fluid" alt="Descripción de la imagen 2"/>
+                                    </div>
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dg/photoshop.png" class="img-fluid" alt="Descripción de la imagen 3"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modal DJ -->
+            <div class="modal fade" id="modalDJ" tabindex="-1" aria-labelledby="modalDJLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="modalDJLabel">Desarrollo de Juegos</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body py-50">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dj/unity.png" class="img-fluid" alt="Descripción de la imagen 1"/>
+                                    </div>
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dj/csharp.png" class="img-fluid" alt="Descripción de la imagen 2"/>
+                                    </div>
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dj/blender.png" class="img-fluid" alt="Descripción de la imagen 3"/>
+                                    </div>
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dj/piskel.png" class="img-fluid" alt="Descripción de la imagen 4"/>
+                                    </div>
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dw/github.png" class="img-fluid" alt="Descripción de la imagen 4"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modal I -->
+            <div class="modal fade" id="modalI" tabindex="-1" aria-labelledby="modalILabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="modalILabel">Ilustración Digital</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body py-50">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dg/illustrator.png" class="img-fluid" alt="Descripción de la imagen 1"/>
+                                    </div>
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dg/photoshop.png" class="img-fluid" alt="Descripción de la imagen 2"/>
+                                    </div>
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dg/figma.png" class="img-fluid" alt="Descripción de la imagen 3"/>
+                                    </div>
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dj/piskel.png" class="img-fluid" alt="Descripción de la imagen 4"/>
+                                    </div>
+                                    <div class="col-md-4 py-5">
+                                        <img src="../imgs/softwares/dominio/dj/blender.png" class="img-fluid" alt="Descripción de la imagen 5"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <section><!-- Mi inspiración -->
+
+            <div class="container-fluid py-100">
+                <h1 class="lighttext pb-50 px-5p ">Mi Inspiración</h1>
+                <div class="row px-5p ">
+                    <div class="col-md-3 ">
+                        <div class="ins-card">
+                            <img src="../imgs/sobre-mi/totk.png" class="img-fluid" alt="Descripción de la imagen 1"/>
+                            <div class="ins-card-abajo">
+                                <img src="../imgs/generales/patron1.png" class="img-fluid" alt="Descripción de la imagen 5"/>
+                                <div class="ins-card-abajo-interior">
+                                    <p class="darktext pb-15">Videojuego favorito</p>
+                                    <h2 class="magentatext bold" style='font-family: "Nunito", sans-serif;'>TLOZ: Tears of the Kingdom</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-3 ">
+                        <div class="ins-card">
+                            <img src="../imgs/sobre-mi/advtime.png" class="img-fluid" alt="Descripción de la imagen 2"/>
+                            <div class="ins-card-abajo">
+                                <img src="../imgs/generales/patron1.png" class="img-fluid" alt="Descripción de la imagen 5"/>
+                                <div class="ins-card-abajo-interior">
+                                    <p class="darktext pb-15">Serie favorita</p>
+                                    <h2 class="magentatext bold" style='font-family: "Nunito", sans-serif;'>Hora de Aventura</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-3 ">
+                        <div class="ins-card">
+                            <img src="../imgs/sobre-mi/belle.png" class="img-fluid" alt="Descripción de la imagen 3"/>
+                            <div class="ins-card-abajo">
+                                <img src="../imgs/generales/patron1.png" class="img-fluid" alt="Descripción de la imagen 5"/>
+                                <div class="ins-card-abajo-interior">
+                                    <p class="darktext pb-10">Película favorita</p>
+                                    <h2 class="magentatext bold" style='font-family: "Nunito", sans-serif;'>Belle</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-3 ">
+                        <div class="ins-card">
+                            <img src="../imgs/sobre-mi/funkyc.png" class="img-fluid" alt="Descripción de la imagen 4"/>
+                            <div class="ins-card-abajo">
+                                <img src="../imgs/generales/patron1.png" class="img-fluid" alt="Descripción de la imagen 5"/>
+                                <div class="ins-card-abajo-interior">
+                                    <p class="darktext pb-15">Álbum favorito</p>
+                                    <h2 class="magentatext bold" style='font-family: "Nunito", sans-serif;'>Tatsuro Y.: Funky Crusin'</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer> <!-- Footer -->
+        <div class="container-fluid px-5p py-100">
+          <div class="row text-center">
+            <div class="col-md-10 mx-auto">
+              <div class="card-soy border-r-10">
+                <img src="../imgs/generales/patron1.png" class="card-soy-img-fondo border-r-10" alt="Background image placeholder" />
+      
+                <div class="card-soy-interior border-r-10 ">
+                  <div class="row">
+                    <div class="col-md-4 card-soy-interior-izq">
+                      <img src="../imgs/generales/casco-de-astronauta.png" class="card-soy-img-astro" alt="Astro image placeholder" />
+                    </div>
+      
+                    <div class="col-md-8 card-soy-interior-der border-r-10">
+                      <h1 class="magentatext">¡Trabajemos juntos!</h1>
+                      <p class="darktext">Estoy disponible y encantado de ofrecerte mis servicios digitales. Puedes contactarme a través de la red que te sea más conveniente.</p>
+      
+                      <div class="row px-20p">
+                        <a href="https://www.behance.net/eduardofuentes28" target="_blank" class="col-md-3 rrss-link">
+                          <img src="../imgs/rrss/behance.png" class="img-fluid" alt="Social media 1" />
+                          <img src="../imgs/rrss/rrss-hover.png" class="img-fluid rrss-hover" alt="Hover social media 1" />
+                        </a>
+      
+                        <a href="mailto:effs76@gmail.com" target="_blank" class="col-md-3 rrss-link">
+                          <img src="../imgs/rrss/gmail.png" class="img-fluid" alt="Social media 2" />
+                          <img src="../imgs/rrss/rrss-hover.png" class="img-fluid rrss-hover" alt="Hover social media 2" />
+                        </a>
+      
+                        <a href="https://www.instagram.com/ungualiderincon/" target="_blank" class="col-md-3 rrss-link">
+                          <img src="../imgs/rrss/instagram.png" class="img-fluid" alt="Social media 3" />
+                          <img src="../imgs/rrss/rrss-hover.png" class="img-fluid rrss-hover" alt="Hover social media 3" />
+                        </a>
+      
+                        <a href="https://www.linkedin.com/in/eduardo-fuentes-352414203/" target="_blank" class="col-md-3 rrss-link">
+                          <img src="../imgs/rrss/linkedin.png" class="img-fluid" alt="Social media 4" />
+                          <img src="../imgs/rrss/rrss-hover.png" class="img-fluid rrss-hover" alt="Hover social media 4" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>

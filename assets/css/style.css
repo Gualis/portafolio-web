@@ -21,20 +21,20 @@ body {
 h1 {
   font-family: "Oliciy";
   font-size: 36px;
-  margin-bottom: 0%;
+  margin-bottom: 0% !important;
 }
 
 h2 {
   font-family: "Oliciy";
   font-size: 28px;
-  margin-bottom: 0%;
+  margin-bottom: 0% !important;
 }
 
 p {
   font-family: "Nunito", sans-serif;
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 0%;
+  margin-bottom: 0% !important;
 }
 
 .bold {
@@ -398,9 +398,11 @@ p {
   padding-bottom: 10px;
   margin-top: -10px;
   color: #F9EAE1;
+  font-size: 20px;
 }
 .container-fluid .proyecto-card-texto h2 {
   color: #F9EAE1;
+  font-size: 26px;
 }
 
 .proyecto-card-hover {
@@ -536,7 +538,7 @@ p {
 }
 
 .modal-content {
-  background-color: #342031;
+  background-color: #342031 !important;
   border: 5px solid #F9EAE1;
   border-radius: 10px;
   color: #F9EAE1;
@@ -653,16 +655,6 @@ p {
 .categoria-pagina-titulo img {
   padding-left: 50px;
   width: 200px !important;
-}
-
-.cp-filtro-boton-inactivo {
-  padding: 10px 20px;
-  width: auto;
-  background-color: #9D2053;
-  margin: 10px 20px;
-  position: relative; /* Asegura que el pseudo-elemento se posicione correctamente */
-  overflow: hidden; /* Evita que el pseudo-elemento se desborde */
-  z-index: 0; /* Asegura que el contenido del botón esté encima del pseudo-elemento */
 }
 
 .cp-filtro-boton {

@@ -1,0 +1,38 @@
+{
+    "title": "Smart Partners",
+    "content": "Contenido detallado del proyecto.",
+    "categoryImage": "../img/iconos/icono-web.webp",
+    "mainImage": "../img/proyectos/sp/sp-principal.webp",
+    "tools": [
+        "../img/softwares/webflow.webp",
+        "../img/softwares/css.webp",
+        "../img/softwares/figma.webp"
+    ],
+    "summary": {
+        "title": "Resumen del proyecto",
+        "paragraph": "Durante mi práctica profesional en Smart Partners, empresa de tecnología de seguridad, me encargué de rediseñar su sitio web desde cero. Busqué crear una plataforma que reflejara la experiencia e innovación de la empresa, optimizando la experiencia de usuario y su presencia en línea. Mediante un enfoque integral que incluyó investigación, planificación, diseño y desarrollo, entregué un sitio web funcional, atractivo y alineado con sus objetivos estratégicos."
+    },
+    "infoSections": [
+        {
+            "title": "Research UX",
+            "paragraph": "Comencé comprendiendo a fondo el entorno y relaciones clave de Smart Partners, definiendo propuestas de valor y principales actores involucrados. Al crear perfiles de usuarios y mapear sus trayectos, identifiqué puntos críticos y áreas de mejora. Mediante un benchmark con sitios del sector, obtuve perspectivas para que nuestro diseño igualara o superara a la competencia. Además, investigué palabras clave esenciales para mejorar la visibilidad en motores de búsqueda, asegurando un sólido enfoque SEO.",
+            "list": "Mapa de Contexto<br>VP Canvas<br>Mapa de actores (Stakeholders)<br>Arquetipos Usuarios<br>Customer Journey Map<br>Análisis de Referentes (Benchmark)Análisis de palabras clave (SEO).",
+            "images": [
+                "ruta/a/imagen1.jpg",
+                "ruta/a/imagen2.jpg"
+            ]
+        },
+        {
+            "title": "Título de la Sección 2",
+            "paragraph": "Texto de la sección 2.",
+            "list": "Lista de tareas realizadas.",
+            "images": [
+                "ruta/a/imagen3.jpg",
+                "ruta/a/imagen4.jpg"
+            ]
+        }
+
+    ],
+    "link": "https://smartpartnerss-sublime-site.webflow.io",
+    "linkImage": "../img/generales/link-sitio.png"
+}
