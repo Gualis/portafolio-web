@@ -1,21 +1,21 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Oliciy";
-  src: url("../fonts/Oliciy.ttf   ") format("truetype");
+  src: url("../fonts/Oliciy.ttf") format("truetype");
 }
 body {
   background-color: #342031 !important;
 }
 
 h1 {
-  font-family: "Oliciy", "Montserrat";
+  font-family: "Oliciy", "Montserrat", sans-serif;
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 0% !important;
 }
 
 h2 {
-  font-family: "Oliciy", "Montserrat";
+  font-family: "Oliciy", "Montserrat", sans-serif;
   font-size: 28px;
   margin-bottom: 0% !important;
 }
