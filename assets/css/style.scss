@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Oliciy";
-    src: url("../fonts/oliciy.ttf") format("truetype");
+    src: url("../fonts/Oliciy.ttf   ") format("truetype");
   }
     $color-1: #342031;
     $color-2: #9D2053;
@@ -759,6 +759,9 @@ p{
         align-self: center;
         margin: 0px auto;
     }
+}
+.p-destacados-row{
+    margin-left: -18px !important;
 }
 
 

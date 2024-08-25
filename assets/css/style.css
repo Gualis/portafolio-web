@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Oliciy";
-  src: url("../fonts/oliciy.ttf") format("truetype");
+  src: url("../fonts/Oliciy.ttf   ") format("truetype");
 }
 body {
   background-color: #342031 !important;
@@ -765,6 +765,10 @@ p {
   width: 20%;
   align-self: center;
   margin: 0px auto;
+}
+
+.p-destacados-row {
+  margin-left: -18px !important;
 }
 
 /*+++++++++++++++++++++++++++++++++Responsive+++++++++++++++++++++++++++++++++*/
