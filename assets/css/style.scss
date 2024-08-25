@@ -319,7 +319,7 @@ p{
     height: 100%;
     object-fit: cover;
     overflow: hidden !important;
-    left: 0%;
+    left: 0% !important;
     top: 0%;
     z-index: -10;
     opacity: 60%;
@@ -747,6 +747,9 @@ p{
 .dr-none{
     display: block;
 }
+.dr-yes{
+    display: none;
+}
 .py-50-r{
     padding: 50px 0px;
 }
@@ -757,6 +760,7 @@ p{
         margin: 0px auto;
     }
 }
+
 
 
 /*+++++++++++++++++++++++++++++++++Responsive+++++++++++++++++++++++++++++++++*/
@@ -799,6 +803,9 @@ p{
     }
     .dr-none{
         display: none;
+    }
+    .dr-yes{
+        display: block;
     }
     .card-soy {
         padding: 0px 0px;
@@ -867,6 +874,28 @@ p{
     .py-50-r{
         padding: 20px 0px;
     }
+    .modal-body .col-md-4 {
+        flex: 0 0 50%; // 2 columnas en pantallas medianas o más pequeñas
+        max-width: 50%;
+        padding: 10px; // Reducir el padding para mejor ajuste
+    }
+    .modal-dialog{
+        min-width: 90% !important;
+        margin: 20px auto !important;
+    }
+    .modal-body {
+        padding: 1.5rem; // Disminuir padding para mejorar el espacio en pantallas pequeñas
+        .py-5{
+            padding: 25px 0px !important;
+        }
+    }
+    .mi-insp{
+        .col-md-3{
+            width: 80%;
+            margin: 20px auto;
+        }
+    }
+    
   }
 
  
