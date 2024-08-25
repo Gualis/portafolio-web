@@ -12,12 +12,14 @@ h1 {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 0% !important;
+  line-height: 150% !important;
 }
 
 h2 {
   font-family: "Oliciy";
   font-size: 28px;
   margin-bottom: 0% !important;
+  line-height: 150% !important;
 }
 
 p {
@@ -52,7 +54,7 @@ p {
 }
 
 .border-b-3 {
-  border-bottom: #F9EAE1 3px solid;
+  border-bottom: #F9EAE1 3px solid !important;
 }
 
 .border-r-0 {

@@ -18,11 +18,13 @@ h1{
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 0% !important;
+    line-height: 150% !important;
 }
 h2{
     font-family: "Oliciy";
     font-size: 28px;
     margin-bottom: 0% !important;
+    line-height: 150% !important;
 }
 p{
     font-family: "Nunito", sans-serif;
@@ -51,7 +53,7 @@ p{
     border: $color-3 5px solid;
 }
 .border-b-3{
-    border-bottom: $color-3 3px solid;
+    border-bottom: $color-3 3px solid !important;
 }
 .border-r-0{
     border-radius: 0px;
