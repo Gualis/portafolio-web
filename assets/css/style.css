@@ -8,13 +8,14 @@ body {
 }
 
 h1 {
-  font-family: "Oliciy";
+  font-family: "Oliciy", "Montserrat";
   font-size: 36px;
+  font-weight: 700;
   margin-bottom: 0% !important;
 }
 
 h2 {
-  font-family: "Oliciy";
+  font-family: "Oliciy", "Montserrat";
   font-size: 28px;
   margin-bottom: 0% !important;
 }
