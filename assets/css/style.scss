@@ -13,14 +13,14 @@ body{
 }
 
 h1{
-    font-family: "Oliciy", "Montserrat", sans-serif;
+    font-family: "Oliciy";
     
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 0% !important;
 }
 h2{
-    font-family: "Oliciy", "Montserrat", sans-serif;
+    font-family: "Oliciy";
     font-size: 28px;
     margin-bottom: 0% !important;
 }
@@ -71,8 +71,8 @@ p{
     padding-bottom: 25px;
 }
 .py-50{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
 }
 .py-100{
     padding-top: 100px;
@@ -90,6 +90,11 @@ p{
     padding-left: 15%;
     padding-right: 15%;
 }
+.px-20p2{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 .pb-10{
     padding-bottom: 10px;
 }
@@ -463,15 +468,12 @@ p{
 
   .ver-mas-section {
     text-align: center;
-    padding: 20px;
 
     .ver-mas-btn {
         padding: 10px 20px;
         background-color: $color-2;
         color: $color-3;
         border-radius: 10px;
-        font-size: 24px;
-        cursor: pointer;
         transition: background-color 0.3s ease;
         position: relative; // Añadir posición relativa
         z-index: 0; // Eliminar el z-index negativo
@@ -765,7 +767,15 @@ p{
 .p-destacados-row{
     margin-left: -18px !important;
 }
-
+.proyecto-single-titulo-banner-col1{
+    width: 25% !important;
+}
+.proyecto-single-titulo-banner-col2{
+    width: 75% !important;
+}
+.proyecto-single-titulo-banner-col3{
+    width: 15% !important;
+}
 
 
 /*+++++++++++++++++++++++++++++++++Responsive+++++++++++++++++++++++++++++++++*/
@@ -900,7 +910,13 @@ p{
             margin: 20px auto;
         }
     }
-    
+    .proyecto-single-herramienta{
+        width: 50px;
+    }
+    .px-20p2{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
   }
 
  

@@ -8,14 +8,14 @@ body {
 }
 
 h1 {
-  font-family: "Oliciy", "Montserrat", sans-serif;
+  font-family: "Oliciy";
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 0% !important;
 }
 
 h2 {
-  font-family: "Oliciy", "Montserrat", sans-serif;
+  font-family: "Oliciy";
   font-size: 28px;
   margin-bottom: 0% !important;
 }
@@ -77,8 +77,8 @@ p {
 }
 
 .py-50 {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
 }
 
 .py-100 {
@@ -97,6 +97,11 @@ p {
 }
 
 .px-20p {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.px-20p2 {
   padding-left: 15%;
   padding-right: 15%;
 }
@@ -475,15 +480,12 @@ p {
 
 .ver-mas-section {
   text-align: center;
-  padding: 20px;
 }
 .ver-mas-section .ver-mas-btn {
   padding: 10px 20px;
   background-color: #9D2053;
   color: #F9EAE1;
   border-radius: 10px;
-  font-size: 24px;
-  cursor: pointer;
   transition: background-color 0.3s ease;
   position: relative;
   z-index: 0;
@@ -772,6 +774,18 @@ p {
   margin-left: -18px !important;
 }
 
+.proyecto-single-titulo-banner-col1 {
+  width: 25% !important;
+}
+
+.proyecto-single-titulo-banner-col2 {
+  width: 75% !important;
+}
+
+.proyecto-single-titulo-banner-col3 {
+  width: 15% !important;
+}
+
 /*+++++++++++++++++++++++++++++++++Responsive+++++++++++++++++++++++++++++++++*/
 @media (max-width: 768px) {
   h1 {
@@ -885,5 +899,12 @@ p {
   .mi-insp .col-md-3 {
     width: 80%;
     margin: 20px auto;
+  }
+  .proyecto-single-herramienta {
+    width: 50px;
+  }
+  .px-20p2 {
+    padding-left: 0%;
+    padding-right: 0%;
   }
 }/*# sourceMappingURL=style.css.map */
