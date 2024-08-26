@@ -229,7 +229,7 @@ p {
   margin-top: -300px !important;
   width: 33% !important;
   animation: float 5s ease-in-out infinite;
-  z-index: -5;
+  z-index: 10;
 }
 
 @keyframes float {
@@ -841,7 +841,7 @@ p {
   }
   .card-soy-interior-der {
     width: 100% !important;
-    padding: 20px !important;
+    padding: 0px 50px !important;
   }
   .card-soy-interior-der h1 {
     text-align: center !important;
@@ -851,7 +851,7 @@ p {
     text-align: left;
   }
   .card-soy-interior-der-pb {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
   .card-soy-interior-der-h1 {
     height: 370px;
