@@ -483,7 +483,8 @@ p {
 .ver-mas-section {
   text-align: center;
 }
-.ver-mas-section .ver-mas-btn {
+
+.ver-mas-btn {
   padding: 10px 20px;
   background-color: #9D2053;
   color: #F9EAE1;
@@ -492,7 +493,8 @@ p {
   position: relative;
   z-index: 0;
 }
-.ver-mas-section .ver-mas-btn::before {
+
+.ver-mas-btn::before {
   content: "";
   position: absolute;
   left: 0;
@@ -504,7 +506,8 @@ p {
   z-index: -1;
   border-radius: 10px;
 }
-.ver-mas-section .ver-mas-btn:hover::before {
+
+.ver-mas-btn:hover::before {
   height: 100%;
 }
 
@@ -786,6 +789,10 @@ p {
 
 .proyecto-single-titulo-banner-col3 {
   width: 15% !important;
+}
+
+.collapsible-content {
+  transition: all 0.3s ease;
 }
 
 /*+++++++++++++++++++++++++++++++++Responsive+++++++++++++++++++++++++++++++++*/
