@@ -179,7 +179,8 @@ p {
   background-color: #9D2053;
   border-radius: 10px;
   transition: height 0.3s ease-in-out;
-  z-index: -10; /* Asegura que el pseudo-elemento esté detrás del texto */
+  z-index: -10;
+  /* Asegura que el pseudo-elemento esté detrás del texto */
 }
 
 .nav-link:hover::before {
@@ -187,7 +188,8 @@ p {
 }
 
 .navbar-toggler {
-  border-color: #F9EAE1; /* Ocultar el borde del botón */
+  border-color: #F9EAE1;
+  /* Ocultar el borde del botón */
 }
 
 .navbar-toggler-icon {
@@ -201,7 +203,8 @@ p {
 .banner-inicio {
   position: relative;
   width: 100%;
-  height: auto; /* Ajusta según tus necesidades */
+  height: auto;
+  /* Ajusta según tus necesidades */
   overflow: hidden;
 }
 
@@ -212,9 +215,11 @@ p {
   min-width: 200%;
   min-height: 100%;
   z-index: -10;
-  background-size: cover; /* Asegura que la imagen no se estire */
+  background-size: cover;
+  /* Asegura que la imagen no se estire */
   background-repeat: repeat-x;
-  animation: moveBackground 30s linear infinite; /* Ajusta la duración según lo necesario */
+  animation: moveBackground 30s linear infinite;
+  /* Ajusta la duración según lo necesario */
 }
 
 @keyframes moveBackground {
@@ -237,7 +242,8 @@ p {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px); /* Ajusta el valor según la intensidad del movimiento que desees */
+    transform: translateY(-20px);
+    /* Ajusta el valor según la intensidad del movimiento que desees */
   }
 }
 .card-soy {
@@ -303,15 +309,18 @@ p {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 10px;
-  overflow: hidden; /* Para asegurar que el pseudo-elemento no salga del borde */
+  overflow: hidden;
+  /* Para asegurar que el pseudo-elemento no salga del borde */
 }
 .boton-card-1 h2 {
   font-family: "Nunito", sans-serif;
   margin-bottom: 0px;
   text-decoration: none;
   color: #F9EAE1;
-  position: relative; /* Para asegurarse de que esté por encima del pseudo-elemento */
-  z-index: 2; /* Asegura que el texto esté por encima del pseudo-elemento */
+  position: relative;
+  /* Para asegurarse de que esté por encima del pseudo-elemento */
+  z-index: 2;
+  /* Asegura que el texto esté por encima del pseudo-elemento */
 }
 
 .boton-card-1::before {
@@ -323,7 +332,8 @@ p {
   height: 0;
   background-color: #74183d;
   transition: height 0.3s ease-in-out;
-  z-index: 1; /* Asegura que el pseudo-elemento esté detrás del texto */
+  z-index: 1;
+  /* Asegura que el pseudo-elemento esté detrás del texto */
 }
 
 .boton-card-1:hover::before {
@@ -422,8 +432,10 @@ p {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  position: relative; /* Añadir posición relativa para el pseudo-elemento */
-  overflow: hidden; /* Para asegurarse de que el pseudo-elemento no se desborde */
+  position: relative;
+  /* Añadir posición relativa para el pseudo-elemento */
+  overflow: hidden;
+  /* Para asegurarse de que el pseudo-elemento no se desborde */
 }
 
 .proyecto-card-hover::before {
@@ -434,13 +446,17 @@ p {
   width: 100%;
   height: 0;
   background-color: #9D2053;
-  transition: height 0.3s ease-in-out; /* Transición para el relleno de abajo hacia arriba */
-  z-index: -1; /* Asegurarse de que el pseudo-elemento esté detrás del contenido */
-  border-radius: 10px; /* Mantener el borde redondeado */
+  transition: height 0.3s ease-in-out;
+  /* Transición para el relleno de abajo hacia arriba */
+  z-index: -1;
+  /* Asegurarse de que el pseudo-elemento esté detrás del contenido */
+  border-radius: 10px;
+  /* Mantener el borde redondeado */
 }
 
 .proyecto-card-hover:hover::before {
-  height: 100%; /* Expandir para cubrir todo el div */
+  height: 100%;
+  /* Expandir para cubrir todo el div */
 }
 
 .proyecto-card-hover:hover {
@@ -480,6 +496,10 @@ p {
   max-height: 50%;
 }
 
+button {
+  font-size: 24px;
+}
+
 .ver-mas-section {
   text-align: center;
 }
@@ -492,6 +512,7 @@ p {
   transition: background-color 0.3s ease;
   position: relative;
   z-index: 0;
+  font-size: 20px !important;
 }
 
 .ver-mas-btn::before {
@@ -512,7 +533,8 @@ p {
 }
 
 .imagen-container {
-  overflow: hidden; /* Para ocultar el contenido cuando la altura sea 0 */
+  overflow: hidden;
+  /* Para ocultar el contenido cuando la altura sea 0 */
 }
 
 .imagen {
@@ -522,10 +544,14 @@ p {
 }
 
 .imagen-container img {
-  height: 0; /* Valor inicial */
-  opacity: 0; /* Valor inicial */
-  transition: height 0.5s ease, opacity 0.5s ease; /* Transición de 0.5s */
-  overflow: hidden; /* Evita que el contenido sobresalga */
+  height: 0;
+  /* Valor inicial */
+  opacity: 0;
+  /* Valor inicial */
+  transition: height 0.5s ease, opacity 0.5s ease;
+  /* Transición de 0.5s */
+  overflow: hidden;
+  /* Evita que el contenido sobresalga */
 }
 
 .rrss-link {
@@ -585,11 +611,13 @@ p {
 }
 
 .btn-close {
-  filter: invert(1.5); /* Cambia el color a blanco */
+  filter: invert(1.5);
+  /* Cambia el color a blanco */
 }
 
 .btn-close:hover {
-  filter: invert(2); /* Cambia el color a gris claro al pasar el mouse */
+  filter: invert(2);
+  /* Cambia el color a gris claro al pasar el mouse */
 }
 
 .boton-dominio {
@@ -598,15 +626,18 @@ p {
   padding-bottom: 25px;
   width: 100%;
   text-align: center;
-  border: 3px solid #F9EAE1; /* $color-3 */
+  border: 3px solid #F9EAE1;
+  /* $color-3 */
   border-radius: 10px;
-  background-color: #342031; /* $color-1 */
+  background-color: #342031;
+  /* $color-1 */
   overflow: hidden;
   transition: color 0.4s;
 }
 .boton-dominio h2 {
   position: relative;
-  color: #F9EAE1; /* $color-3 */
+  color: #F9EAE1;
+  /* $color-3 */
   z-index: 1;
   transition: color 0.4s;
 }
@@ -682,9 +713,12 @@ p {
   width: auto;
   background-color: #9D2053;
   margin: 10px 20px;
-  position: relative; /* Asegura que el pseudo-elemento se posicione correctamente */
-  overflow: hidden; /* Evita que el pseudo-elemento se desborde */
-  z-index: 0; /* Asegura que el contenido del botón esté encima del pseudo-elemento */
+  position: relative;
+  /* Asegura que el pseudo-elemento se posicione correctamente */
+  overflow: hidden;
+  /* Evita que el pseudo-elemento se desborde */
+  z-index: 0;
+  /* Asegura que el contenido del botón esté encima del pseudo-elemento */
   font-weight: 700 !important;
 }
 
@@ -702,7 +736,8 @@ p {
   border-radius: 5px;
   color: #F9EAE1;
   text-decoration: none;
-  position: relative; /* Añadido para posicionamiento del pseudo-elemento */
+  position: relative;
+  /* Añadido para posicionamiento del pseudo-elemento */
 }
 
 .paginacion .page-numbers::before {
@@ -712,9 +747,12 @@ p {
   bottom: 0;
   width: 100%;
   height: 0;
-  background-color: #9D2053; /* Color de relleno al hacer hover */
-  transition: height 0.3s ease-in-out; /* Transición de altura */
-  z-index: -1; /* Detrás del texto */
+  background-color: #9D2053;
+  /* Color de relleno al hacer hover */
+  transition: height 0.3s ease-in-out;
+  /* Transición de altura */
+  z-index: -1;
+  /* Detrás del texto */
 }
 
 .paginacion .page-numbers:hover::before {
