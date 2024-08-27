@@ -672,6 +672,7 @@ p{
     position: relative; /* Asegura que el pseudo-elemento se posicione correctamente */
     overflow: hidden; /* Evita que el pseudo-elemento se desborde */
     z-index: 0; /* Asegura que el contenido del botón esté encima del pseudo-elemento */
+    font-weight: 700 !important;
 }
 
 
@@ -719,7 +720,7 @@ p{
 }
 .single{
     p{
-        font-weight: 300 !important;
+        font-weight: 300;
         font-size: 20px;
     }
 }
@@ -730,7 +731,7 @@ p{
 .proyecto-single-titulo-banner{
     p{
         color: $color-2 !important;
-        font-weight: 700;
+        font-weight: 700 !important;
     }
 }
 .proyecto-single-img{
