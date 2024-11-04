@@ -1,0 +1,79 @@
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: $color-3 3px solid;
+
+    .logo {
+        img {
+            max-width: 120px !important;
+            height: auto;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.nav-link {
+    position: relative;
+    color: $color-3 !important;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    margin-bottom: 0%;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: $color-2;
+    //border: 0px solid $color-3;
+    border-radius: 10px;
+    transition: height 0.3s ease-in-out;
+    z-index: -10;
+    /* Asegura que el pseudo-elemento esté detrás del texto */
+}
+
+.nav-link:hover::before {
+    height: 100%;
+    // border: 3px solid $color-3;
+}
+
+.navbar-toggler {
+    border-color: $color-3;
+    /* Ocultar el borde del botón */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="%23F9EAE1" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
+.menu-r-items {
+    text-align: end;
+}
+
+/*+++++++++++++++++++++++++++++++++ Responsive +++++++++++++++++++++++++++++++++*/
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 5%;
+    }
+    .nav-link {
+        text-align: center;
+        margin: 5px 0;
+    }
+    .logo {
+        img {
+            max-height: 70px; // Reduce el tamaño del logo en pantallas pequeñas
+            padding-bottom: 5px;
+        }
+    }
+}

@@ -1,0 +1,145 @@
+.modal-content {
+    background-color: $color-1 !important;
+    border: 5px solid $color-3;
+    border-radius: 10px;
+    color: $color-3;
+
+}
+
+.modal-header {
+    padding: 25px 5% !important;
+    border-bottom: 0px !important;
+    background-color: $color-2;
+}
+
+.modal-dialog {
+    width: 75% !important;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 75% !important;
+        margin: 1.75rem auto;
+    }
+}
+
+.modal-body {
+    padding: 0% 5%;
+}
+
+.btn-close {
+    filter: invert(1.5);
+    /* Cambia el color a blanco */
+}
+
+.btn-close:hover {
+    filter: invert(2);
+    /* Cambia el color a gris claro al pasar el mouse */
+}
+
+.boton-dominio {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    text-align: center;
+    border: 3px solid $color-3;
+    /* $color-3 */
+    border-radius: 10px;
+    background-color: $color-1;
+    /* $color-1 */
+    overflow: hidden;
+    transition: color 0.4s;
+
+    h2 {
+        position: relative;
+        color: $color-3;
+        /* $color-3 */
+        z-index: 1;
+        transition: color 0.4s;
+    }
+}
+
+
+.boton-dominio::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-2;
+    transition: top 0.4s;
+    z-index: 0;
+}
+
+.boton-dominio:hover::before {
+    top: 0;
+}
+
+.ins-card {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.ins-card-arriba {
+    width: 100%
+}
+
+.ins-card-abajo {
+    position: relative;
+    overflow: hidden;
+    height: 100% !important;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0%;
+        top: 0%;
+        z-index: -10;
+    }
+
+    .ins-card-abajo-interior {
+        background: $color-3;
+        margin: 25px;
+        padding: 20px;
+        height: 175px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
+
+/*+++++++++++++++++++++++++++++++++ Responsive +++++++++++++++++++++++++++++++++*/
+
+@media (max-width: 768px) {
+    .modal-body .col-md-4 {
+        flex: 0 0 50%; // 2 columnas en pantallas medianas o más pequeñas
+        max-width: 50%;
+        padding: 10px; // Reducir el padding para mejor ajuste
+    }
+
+    .modal-dialog {
+        min-width: 90% !important;
+        margin: 20px auto !important;
+    }
+
+    .modal-body {
+        padding: 1.5rem; // Disminuir padding para mejorar el espacio en pantallas pequeñas
+
+        .py-5 {
+            padding: 25px 0px !important;
+        }
+    }
+    
+}

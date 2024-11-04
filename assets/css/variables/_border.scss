@@ -1,0 +1,29 @@
+.border-3 {
+    border: $color-3 3px solid;
+}
+
+.border-5 {
+    border: $color-3 5px solid;
+}
+
+.border-b-3 {
+    border-bottom: $color-3 3px solid !important;
+}
+
+.border-r-0 {
+    border-radius: 0px;
+}
+
+.border-r-5 {
+    border-radius: 5px;
+}
+
+.border-r-10 {
+    border-radius: 10px;
+}
+
+/*+++++++++++++++++++++++++++++++++ Responsive +++++++++++++++++++++++++++++++++*/
+
+@media (max-width: 768px) {
+    
+}

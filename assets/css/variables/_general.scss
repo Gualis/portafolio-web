@@ -1,0 +1,19 @@
+.dr-none {
+    display: block;
+}
+
+.dr-yes {
+    display: none;
+}
+
+/*+++++++++++++++++++++++++++++++++ Responsive +++++++++++++++++++++++++++++++++*/
+
+@media (max-width: 768px) {
+    .dr-none {
+        display: none;
+    }
+
+    .dr-yes {
+        display: block;
+    }
+}

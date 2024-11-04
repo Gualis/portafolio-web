@@ -1,0 +1,39 @@
+//+++++++++++++++++++++++++ Íconos de RRSS - Todas las páginas +++++++++++++++++++++++++
+.rrss-link {
+    position: relative !important;
+
+}
+
+.rrss-hover {
+    opacity: 0%;
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    padding: 0px 12px;
+    left: 0%;
+    top: 0%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.rrss-hover:hover {
+    opacity: 100%;
+
+}
+.rrss-footer {
+    a {
+        width: 20%;
+        align-self: center;
+        margin: 0px auto;
+    }
+}
+
+/*+++++++++++++++++++++++++++++++++ Responsive +++++++++++++++++++++++++++++++++*/
+
+@media (max-width: 768px) {
+    .rrss-footer {
+        a {
+            width: 25%;
+            align-self: center;
+        }
+    }
+}

@@ -1,0 +1,138 @@
+.categoria-pagina-titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        padding-left: 50px;
+        width: 200px !important;
+    }
+}
+
+.cp-filtro-boton {
+    padding: 10px 20px;
+    width: auto;
+    background-color: $color-2;
+    margin: 10px 20px;
+    position: relative;
+    /* Asegura que el pseudo-elemento se posicione correctamente */
+    overflow: hidden;
+    /* Evita que el pseudo-elemento se desborde */
+    z-index: 0;
+    /* Asegura que el contenido del botón esté encima del pseudo-elemento */
+    font-weight: 700 !important;
+}
+
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.paginacion .page-numbers {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: 2px solid $color-3;
+    border-radius: 5px;
+    color: $color-3;
+    text-decoration: none;
+    position: relative;
+    /* Añadido para posicionamiento del pseudo-elemento */
+}
+
+.paginacion .page-numbers::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: $color-2;
+    /* Color de relleno al hacer hover */
+    transition: height 0.3s ease-in-out;
+    /* Transición de altura */
+    z-index: -1;
+    /* Detrás del texto */
+}
+
+.paginacion .page-numbers:hover::before {
+    height: 100%;
+}
+
+.paginacion .page-numbers:hover {
+    color: $color-3;
+}
+
+.paginacion .page-numbers.current {
+    background-color: $color-2;
+    color: $color-3;
+    border-color: $color-3;
+}
+//+++++++++++++++++++++++++ Singles +++++++++++++++++++++++++
+.single {
+    p {
+        font-weight: 300;
+        font-size: 20px;
+    }
+}
+.proyecto-single-herramienta {
+    width: 80px;
+
+}
+
+.proyecto-single-titulo-banner {
+    p {
+        color: $color-2 !important;
+        font-weight: 700 !important;
+    }
+}
+
+.proyecto-single-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.proyecto-boton-link {
+    img {
+        transition: transform 0.3s ease-in-out;
+    }
+
+}
+
+.proyecto-boton-link:hover {
+    img {
+        transform: scale(1.05);
+    }
+
+
+}
+.p-destacados-row {
+    margin-left: -18px !important;
+}
+
+.proyecto-single-titulo-banner-col1 {
+    width: 25% !important;
+}
+
+.proyecto-single-titulo-banner-col2 {
+    width: 75% !important;
+}
+
+.proyecto-single-titulo-banner-col3 {
+    width: 15% !important;
+}
+
+.collapsible-content {
+    transition: all 0.3s ease;
+}
+
+/*+++++++++++++++++++++++++++++++++ Responsive +++++++++++++++++++++++++++++++++*/
+
+@media (max-width: 768px) {
+    .proyecto-single-herramienta {
+        width: 50px;
+    }
+}

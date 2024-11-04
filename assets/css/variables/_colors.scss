@@ -1,0 +1,27 @@
+$color-1: #342031;
+$color-2: #9D2053;
+$color-3: #F9EAE1;
+
+$color-2-1: #74183d;
+
+body {
+    background-color: $color-1 !important;
+}
+
+.bg-1 {
+    background-color: $color-1;
+}
+
+.bg-2 {
+    background-color: $color-2;
+}
+
+.bg-3 {
+    background-color: $color-3;
+}
+
+/*+++++++++++++++++++++++++++++++++ Responsive +++++++++++++++++++++++++++++++++*/
+
+@media (max-width: 768px) {
+    
+}
